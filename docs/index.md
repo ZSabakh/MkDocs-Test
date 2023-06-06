@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+### GitHub Actions + S3 deployment test
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<!-- List of steps -->
 
-## Commands
+General overview of the steps to deploy a static website to S3 using GitHub Actions.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Steps to Deploy
 
-## Project layout
+1. Configure the S3 bucket as a website
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+2. Configure GitHub Secrets
+
+3. Create a GitHub Actions Workflow
+
+4. ??
