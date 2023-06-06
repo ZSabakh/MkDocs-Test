@@ -1,6 +1,6 @@
 name: Upload to S3
 on:
-  create:
+  push:
     branches:
       - gh-pages
 
