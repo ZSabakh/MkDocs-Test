@@ -13,3 +13,5 @@ General overview of the steps to deploy a static website to S3 using GitHub Acti
 3. Create a GitHub Actions Workflow
 
 4. ??
+
+5. ?
