@@ -2,7 +2,7 @@ name: Upload to S3
 on:
   workflow_run:
     workflows: ["ghPagesDeployment"]
-    branches: [main, development]
+    branches: [main]
     types:
       - completed
 
@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
+      with:
+        ref: gh-pages
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
