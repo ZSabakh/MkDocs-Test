@@ -14,10 +14,4 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material 
       - run: pip install mkdocs-exclude-search 
-      - run: git config --local user.email "zsabakhtarishvili@atu.edu"
-      - run: git config --local user.name "ZSabakh"
-      - run: git checkout -B gh-pages
-      - run: mkdocs build --clean
-      - run: git add -f site
-      - run: git commit -m "Update gh-pages with latest build"
-      - run: git push -f origin gh-pages
+      - run: mkdocs gh-deploy --force
