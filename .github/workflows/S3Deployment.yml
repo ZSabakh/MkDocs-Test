@@ -1,8 +1,10 @@
 name: Upload to S3
 on:
-  push:
-    branches:
-      - gh-pages
+  workflow_run:
+    workflows: ["ghPagesDeployment"]
+    branches: [main, development]
+    types:
+      - completed
 
 jobs:
   deploy:
